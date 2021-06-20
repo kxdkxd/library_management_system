@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>932</width>
+    <height>710</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>911</width>
+      <height>671</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>932</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_O">
+    <property name="title">
+     <string>操作(O)</string>
+    </property>
+    <addaction name="action_login"/>
+    <addaction name="action_cancellogin"/>
+    <addaction name="separator"/>
+    <addaction name="action_borrowbook"/>
+    <addaction name="action_returnbook"/>
+    <addaction name="separator"/>
+    <addaction name="action_exit"/>
+   </widget>
+   <widget class="QMenu" name="menu_Q">
+    <property name="title">
+     <string>查询(Q)</string>
+    </property>
+    <addaction name="action_querybook"/>
+    <addaction name="action_queryauthor"/>
+    <addaction name="separator"/>
+    <addaction name="action_showallbooks"/>
+   </widget>
+   <widget class="QMenu" name="menu_U">
+    <property name="title">
+     <string>用户管理(U)</string>
+    </property>
+    <addaction name="action_queryuser"/>
+    <addaction name="separator"/>
+    <addaction name="action_reguser"/>
+    <addaction name="action_deluser"/>
+    <addaction name="separator"/>
+    <addaction name="action_showalluser"/>
+   </widget>
+   <widget class="QMenu" name="menu_G">
+    <property name="title">
+     <string>管理图书(G)</string>
+    </property>
+    <addaction name="action_addbook"/>
+    <addaction name="action_delbook"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>信息修改</string>
+    </property>
+    <addaction name="action_editpwd"/>
+    <addaction name="separator"/>
+    <addaction name="action_editbook"/>
+   </widget>
+   <widget class="QMenu" name="menu_H">
+    <property name="title">
+     <string>关于(H)</string>
+    </property>
+    <addaction name="action_about"/>
+   </widget>
+   <addaction name="menu_O"/>
+   <addaction name="menu_Q"/>
+   <addaction name="menu_U"/>
+   <addaction name="menu_G"/>
+   <addaction name="menu"/>
+   <addaction name="menu_H"/>
+  </widget>
+  <action name="action_login">
+   <property name="text">
+    <string>登录(L)</string>
+   </property>
+  </action>
+  <action name="action_cancellogin">
+   <property name="text">
+    <string>注销(R)</string>
+   </property>
+  </action>
+  <action name="action_borrowbook">
+   <property name="text">
+    <string>图书借阅(D)</string>
+   </property>
+  </action>
+  <action name="action_returnbook">
+   <property name="text">
+    <string>图书归还(T)</string>
+   </property>
+  </action>
+  <action name="action_exit">
+   <property name="text">
+    <string>退出(X)</string>
+   </property>
+  </action>
+  <action name="action_querybook">
+   <property name="text">
+    <string>图书查询(B)</string>
+   </property>
+  </action>
+  <action name="action_queryauthor">
+   <property name="text">
+    <string>按作者查询(W)</string>
+   </property>
+  </action>
+  <action name="action_showallbooks">
+   <property name="text">
+    <string>显示所有图书</string>
+   </property>
+  </action>
+  <action name="action_queryuser">
+   <property name="text">
+    <string>用户信息查询(I)</string>
+   </property>
+  </action>
+  <action name="action_reguser">
+   <property name="text">
+    <string>用户注册(L)</string>
+   </property>
+  </action>
+  <action name="action_deluser">
+   <property name="text">
+    <string>销除用户(D)</string>
+   </property>
+  </action>
+  <action name="action_showalluser">
+   <property name="text">
+    <string>显示所有用户信息</string>
+   </property>
+  </action>
+  <action name="action_addbook">
+   <property name="text">
+    <string>添加图书(A)</string>
+   </property>
+  </action>
+  <action name="action_delbook">
+   <property name="text">
+    <string>删除图书(F)</string>
+   </property>
+  </action>
+  <action name="action_editpwd">
+   <property name="text">
+    <string>修改密码(K)</string>
+   </property>
+  </action>
+  <action name="action_editbook">
+   <property name="text">
+    <string>修改图书信息(M)</string>
+   </property>
+  </action>
+  <action name="action_about">
+   <property name="text">
+    <string>关于系统</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
